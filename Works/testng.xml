@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+	<!-- <test name="Test1"> <classes> <class name="com.test.NewTest9"> <methods> 
+		<include name="test1"></include> </methods> </class> <class name="com.test.NewTest10" 
+		/> </classes> </test> Test <test name="Test2"> 
+	<classes>
+		<class name="com.test.NewTest9">
+			<methods>
+				<include name="test1"></include>
+				<include name="test2"></include>
+			</methods>
+		</class>
+		<class name="com.test.NewTest10" />
+	</classes>
+</test>
+-->
+	<test name="Test1">
+	<parameter name="node" value="http://10.249.196.72:4444/wd/hub"></parameter>
+		<classes>
+			<class name="com.test.NewTest3"></class>
+		</classes>
+	</test>
+	<test name="Test2">
+	<parameter name="node" value="http://10.249.196.73:4444/wd/hub"></parameter>
+		<classes>
+			<class name="com.test.NewTest11"></class>
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
